@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  color: var(--dark-background);
+}
+.DarkMode{
+  background-color: var(--dark-background);
+  color: var(--dark-fonts-contrast);
+}
+
+.App_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20vh;
+}
+
+section{
+  /* transform: translateY(-25%); */
+}
+
+.logo_wpr{
+  display: inline-flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.logo_wpr span{
+  text-align: right;
+}
+
+.search_wpr{
+  position: relative;
+  width: 35rem;
+  margin: 2rem auto;
+}
+
+.search_field{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem calc(1rem + 27px);
+  border-radius: 25px;
+}
+
+.icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.icon--left{
+  left: 1rem;
+}
+.icon--right{
+  right: 1rem;
+}

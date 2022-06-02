@@ -1,0 +1,77 @@
+  .switchInput {
+    height: 20px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 20px;
+  }
+
+  .toggle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+  }
+
+
+  .toggle {
+    position: relative;
+    display: inline-block;
+  }
+  
+  label.toggle-item {
+    width: 3.5em;
+    background: #2e394d;
+    height: 2em;
+    display: inline-block;
+    border-radius: 50px;
+    margin: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+    transform-origin: 20% center;
+    cursor: pointer;
+  }
+  .DarkMode label.toggle-item{
+    background-color: var(--dark-elements);
+  }
+  label.toggle-item:before {
+    display: block;
+    transition: all 0.2s ease;
+    width: 1em;
+    height: 1em;
+    top: 0.25em;
+    left: 0.25em;
+    border-radius: 2em;
+    border: 2px solid #88cf8f;
+    transition: 0.3s ease;
+  }
+
+  
+  .transparent label {
+    background: transparent;
+    border: 1px solid #202124;
+    height: 1.5em;
+  }
+  .DarkMode .transparent label{
+    border-color: var(--dark-elements);
+  }
+
+  .transparent label:before {
+    border: 1px solid #202124;
+    width: 1em;
+    height: 1em;
+    top: 0.15em;
+    left: 0.15em;
+    background: #202124;
+  }
+  .DarkMode .transparent label:before{
+    border-color: var(--dark-elements);
+    background-color: var(--dark-fonts-contrast);
+  }
+  
+  #transparent:checked + label:before {
+    transform: translateX(2em);
+  }
+  
